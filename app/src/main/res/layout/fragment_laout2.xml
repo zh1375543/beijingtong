@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#919193"
+        android:textSize="18sp"
+        android:text="请选择查询条件"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="经办渠道"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:text="全部"
+                android:textSize="16sp"
+                android:paddingRight="15dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/image_right"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="#F2F2F4" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="业务类型"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:text="全部"
+                android:textSize="16sp"
+                android:paddingRight="15dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/image_right"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="#F2F2F4" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="开始日期"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_alignParentRight="true"
+                android:text="2022-01-01"
+                android:textSize="16sp"
+                android:paddingRight="15dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/image_right"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="#F2F2F4" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="结束日期"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_end"
+                android:layout_alignParentRight="true"
+                android:text="2022-01-18"
+                android:textSize="16sp"
+                android:paddingRight="15dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:drawableRight="@mipmap/image_right"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="#F2F2F4" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@drawable/shape_bg1"
+            android:textSize="16sp"
+            android:text="重置"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tv_check"
+            android:background="@drawable/shape_tv"
+            android:textSize="16sp"
+            android:text="查询"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_data_tip"
+        android:layout_width="fill_parent"
+         android:text="没有更多了"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

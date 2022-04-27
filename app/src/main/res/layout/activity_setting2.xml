@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/header_commer" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_name_user1"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@drawable/shape_bg"
+                android:layout_width="fill_parent"
+                android:hint="姓名"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_name_danwei"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@drawable/shape_bg"
+                android:layout_width="fill_parent"
+                android:hint="缴纳单位"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="一月"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+
+                <EditText
+                    android:id="@+id/et_pay_1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="余额"
+                     android:inputType="numberDecimal"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_mouth_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="月份"
+                    android:inputType="date"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_data_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="日期"
+                    android:inputType="date"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_money_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="缴纳金额"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="二月"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_2"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/et_pay_2"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:hint="余额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_mouth_2"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="月份"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_data_2"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="日期"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_money_2"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="缴纳金额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="三月"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_3"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/et_pay_3"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:hint="余额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_mouth_3"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="月份"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_data_3"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="日期"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_money_3"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="缴纳金额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="四月"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_4"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/et_pay_4"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:hint="余额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_mouth_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="月份"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_data_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="日期"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_money_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="缴纳金额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="五月"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_5"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="50dp">
+                <EditText
+                    android:id="@+id/et_pay_5"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="余额"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_mouth_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="月份"
+                    android:inputType="date"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_data_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="日期"
+                    android:inputType="date"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_money_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="缴纳金额"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="六月"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_6"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="50dp">
+                <EditText
+                    android:id="@+id/et_pay_6"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="余额"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_mouth_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="月份"
+                    android:inputType="date"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_data_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="日期"
+                    android:inputType="date"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_money_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="缴纳金额"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="六月利息"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_61"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/et_pay_61"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:hint="余额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_mouth_61"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="月份"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_data_61"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="日期"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_money_61"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="缴纳金额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="七月"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_7"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/et_pay_7"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:hint="余额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_mouth_7"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="月份"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_data_7"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="日期"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_money_7"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="缴纳金额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="8月"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_8"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/et_pay_8"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:hint="余额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_mouth_8"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="月份"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_data_8"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="日期"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_money_8"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="缴纳金额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="9月"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_9"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/et_pay_9"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:hint="余额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_mouth_9"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="月份"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_data_9"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="日期"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_money_9"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="缴纳金额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="10月"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_10"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/et_pay_10"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:hint="余额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_mouth_10"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="月份"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_data_10"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="日期"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_money_10"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="缴纳金额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="11月"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_11"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/et_pay_11"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:hint="余额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_mouth_11"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="月份"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_data_11"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="日期"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_money_11"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="缴纳金额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="12月"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_hui_12"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="汇款/结息"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/et_pay_12"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:hint="余额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_mouth_12"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="月份"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_data_12"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="日期"
+                        android:inputType="date"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_money_12"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg"
+                        android:layout_width="fill_parent"
+                        android:hint="缴纳金额"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+    <Button
+        android:id="@+id/btn_submit1"
+        android:text="保存"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

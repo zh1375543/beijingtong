@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/header_commer" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/et_name_company"
+        android:layout_width="fill_parent"
+        android:padding="10dp"
+        android:background="@drawable/shape_bg"
+        android:layout_margin="10dp"
+        android:hint="参保单位"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_name_address"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_bg"
+        android:layout_width="fill_parent"
+        android:hint="参保社区"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_name_user"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_bg"
+        android:layout_width="fill_parent"
+        android:hint="姓名"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_name_pangy"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_bg"
+        android:layout_width="fill_parent"
+        android:hint="委托代发银行名称"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_name_pangy_num"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_bg"
+        android:layout_width="fill_parent"
+        android:hint="委托代发银行账号"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_name_type"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_bg"
+        android:layout_width="fill_parent"
+        android:hint="缴费人员类型"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_name_times"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_bg"
+        android:layout_width="fill_parent"
+        android:hint="养老保险实际缴费年限"
+        android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="养老"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/et_lao1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="缴费基数"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_lao2"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="单位缴纳"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_lao3"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="个人缴纳"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="失业"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/et_ye1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="缴费基数"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_ye2"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="单位缴纳"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_ye3"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="个人缴纳"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+                <EditText
+                    android:id="@+id/et_ye11"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="5-6月个人缴纳"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_ye22"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="7-12月单位缴纳"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_ye33"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="7-12月个人缴纳"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="工伤"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/et_shang1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="缴费基数"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_shang2"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="单位缴纳"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_shang3"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+                    android:layout_width="fill_parent"
+                    android:hint="个人缴纳"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:text="保存"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

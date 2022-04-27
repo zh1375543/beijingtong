@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="text_size1">16sp</dimen>
+    <dimen name="text_size2">18sp</dimen>
+    <dimen name="text_size3">20sp</dimen>
+
+    <dimen name="recy_item_margin">10dp</dimen>
+</resources>
